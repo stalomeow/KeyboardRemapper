@@ -13,6 +13,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{03563D01-5C4A-4A8B-946D-C3079009BB7C}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{40708931-86A3-43B5-963B-5533CF1065C7}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Install.ps1 = Scripts\Install.ps1
+		Scripts\Uninstall.ps1 = Scripts\Uninstall.ps1
 	EndProjectSection
 EndProject
 Global
