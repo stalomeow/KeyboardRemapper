@@ -63,6 +63,9 @@ LRESULT CALLBACK KbdHook::HookProc(int nCode, WPARAM wParam, LPARAM lParam)
             switch (p->vkCode)
             {
             case VK_NUMLOCK:
+                // https://github.com/microsoft/PowerToys/blob/f565874fc842006f01d34f4f2c8086b029660c20/src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardManager.cpp#L106
+                // Reset Num Lock whenever a NumLock key down event is suppressed
+                // since Num Lock key state change occurs before it is intercepted by low level hooks
                 g_Inputs.UpDown({ VK_NUMLOCK }, true).Flush();
                 return 1; // 阻止默认行为
 
