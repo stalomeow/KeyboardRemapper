@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="InputStream.cpp" />
+    <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="AppMutex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputStream.h" />
+    <ClInclude Include="Hook.h" />
+    <ClInclude Include="AppMutex.h" />
+  </ItemGroup>
+</Project>
