@@ -3,8 +3,7 @@ param (
 )
 
 $AppName = "KeyboardRemapper"
-$AppPath = "$InstallDir\$AppName.exe"
-$DLLPath = $AppPath = "$InstallDir\$AppName.Hook.dll"
+$DLLPath = "$InstallDir\$AppName.Hook.dll"
 
 # 杀掉进程
 Get-Process -Name $AppName -ErrorAction SilentlyContinue | Stop-Process
