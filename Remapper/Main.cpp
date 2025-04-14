@@ -24,13 +24,6 @@ int WINAPI wWinMain(
         return 0;
     }
 
-    // 笔记本断电时，避免 Windows 终止该进程
-    // https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate
-    // To run properly on a power-managed computer, applications such as fax servers, answering machines,
-    // backup agents, and network management applications must use both ES_SYSTEM_REQUIRED and ES_CONTINUOUS
-    // when they process events.
-    SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED);
-
     MSG msg;
 
     while (GetMessageW(&msg, NULL, 0, 0))
